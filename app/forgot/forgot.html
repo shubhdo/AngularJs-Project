@@ -1,0 +1,15 @@
+<h1>Forgot Password</h1>
+<form name="forgot" onsubmit="alert('Link is sent to your registered email')" autocomplete="off">
+    <table>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" required name="email" ng-model="email"></td>
+            <td><span ng-show='forgot.email.$dirty&&forgot.email.$invalid'>
+    Valid Email is required
+  </span></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" ng-disabled="forgot.$invalid"></td>
+        </tr>
+    </table>
+</form>
